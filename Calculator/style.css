@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #2D3250;
+    display: grid;
+    place-items: center ;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 65px;
+    border-bottom: 2px solid white;
+
+    .profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+     h2 {
+        color:  white;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+     h2:hover {
+        color:#19A7CE ;
+        transition: 0.5s;
+    }
+
+    nav {
+        display: flex;
+        align-items: center ;
+        gap: 50px;
+    }
+    
+     ul {
+        display: flex;
+        gap: 25px;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    li a {
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    li a:hover {
+        color: #19A7CE;
+        transition: 0.3s;
+    }
+}
+
+main {
+    .container {
+        margin-top: 50px;
+        width: 1000px;
+        height: 450px;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        width: 300px;
+        height: 200px;
+        border: 1px solid black;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .item:hover {
+        height: 300px;
+        transition: 0.5s;
+    }
+
+    .item h3 {
+        margin-top: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    a {
+        overflow: hidden;
+    }
+
+    button {
+        background: #19A7CE;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 5px 40px;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+}
